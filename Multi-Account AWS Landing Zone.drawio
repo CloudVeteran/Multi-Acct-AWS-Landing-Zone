@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Landing Zone Architecture" id="Jix1i4ayODzbegLoW_6M">
+    <mxGraphModel dx="768" dy="1150" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BOJ9-THQ2cc79ffj_pzR-1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;spacingTop=10;" value="Multi-Account AWS Landing Zone&#xa;(Terraform Managed | NIST 800-53 | FedRAMP Ready)" vertex="1">
+          <mxGeometry height="50" width="700" x="440" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="BOJ9-THQ2cc79ffj_pzR-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF9900;strokeColor=#232F3E;strokeWidth=2;fontColor=#FFFFFF;fontSize=14;fontStyle=1;" value="AWS Organization&#xa;+ Service Control Policies (Root)" vertex="1">
+          <mxGeometry height="70" width="260" x="610" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="BOJ9-THQ2cc79ffj_pzR-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#232F3E;strokeColor=#FF9900;strokeWidth=2;fontColor=#FFFFFF;fontSize=12;" value="Security Account&#xa;• GuardDuty&#xa;• Security Hub (NIST 800-53)" vertex="1">
+          <mxGeometry height="100" width="200" x="90" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="BOJ9-THQ2cc79ffj_pzR-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#232F3E;strokeColor=#FF9900;strokeWidth=2;fontColor=#FFFFFF;fontSize=12;" value="Logging Account&#xa;• Centralized S3 Bucket&#xa;• Organization CloudTrail" vertex="1">
+          <mxGeometry height="100" width="200" x="390" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="BOJ9-THQ2cc79ffj_pzR-17" edge="1" parent="1" source="BOJ9-THQ2cc79ffj_pzR-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="780" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BOJ9-THQ2cc79ffj_pzR-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1B660F;strokeColor=#FFFFFF;strokeWidth=2;fontColor=#FFFFFF;fontSize=12;" value="Shared Services Account" vertex="1">
+          <mxGeometry height="70" width="180" x="690" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="BOJ9-THQ2cc79ffj_pzR-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1B660F;strokeColor=#FFFFFF;strokeWidth=2;fontColor=#FFFFFF;fontSize=12;" value="Production Account" vertex="1">
+          <mxGeometry height="70" width="180" x="940" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="BOJ9-THQ2cc79ffj_pzR-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1B660F;strokeColor=#FFFFFF;strokeWidth=2;fontColor=#FFFFFF;fontSize=12;" value="Non-Production Account" vertex="1">
+          <mxGeometry height="70" width="180" x="940" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="BOJ9-THQ2cc79ffj_pzR-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6B4C9A;strokeColor=#FFFFFF;strokeWidth=2;fontColor=#FFFFFF;fontSize=12;" value="Audit Account" vertex="1">
+          <mxGeometry height="70" width="180" x="690" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="BOJ9-THQ2cc79ffj_pzR-9" edge="1" parent="1" source="BOJ9-THQ2cc79ffj_pzR-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF9900;strokeWidth=2;" target="BOJ9-THQ2cc79ffj_pzR-3" value="SCP Enforcement">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BOJ9-THQ2cc79ffj_pzR-10" edge="1" parent="1" source="BOJ9-THQ2cc79ffj_pzR-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF9900;strokeWidth=2;" target="BOJ9-THQ2cc79ffj_pzR-4" value="SCP Enforcement">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BOJ9-THQ2cc79ffj_pzR-12" edge="1" parent="1" source="BOJ9-THQ2cc79ffj_pzR-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF9900;strokeWidth=2;" target="BOJ9-THQ2cc79ffj_pzR-6" value="SCP Enforcement">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1030" y="235" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BOJ9-THQ2cc79ffj_pzR-14" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF9900;strokeWidth=2;" value="SCP Enforcement">
+          <mxGeometry relative="1" x="0.5556" y="20" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="740" y="320" />
+              <mxPoint x="780" y="320" />
+            </Array>
+            <mxPoint x="740" y="280" as="sourcePoint" />
+            <mxPoint x="780" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BOJ9-THQ2cc79ffj_pzR-15" edge="1" parent="1" source="BOJ9-THQ2cc79ffj_pzR-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#00A3E0;strokeWidth=2;dashed=1;" target="BOJ9-THQ2cc79ffj_pzR-4" value="Findings">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BOJ9-THQ2cc79ffj_pzR-16" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;color=#666666;" value="Built with Terraform | Owner: Marlon | 2026" vertex="1">
+          <mxGeometry height="30" width="500" x="540" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="BOJ9-THQ2cc79ffj_pzR-29" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF9900;strokeWidth=2;" value="">
+          <mxGeometry relative="1" x="-1" y="50" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="779.5" y="400" />
+            </Array>
+            <mxPoint x="779.5" y="400" as="sourcePoint" />
+            <mxPoint x="779.5" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
