@@ -13,11 +13,10 @@ Enterprise-grade multi-account strategy built with Terraform, aligned with NIST 
 - AWS Config rules with automated remediation
 - NIST 800-53 aligned
 
-### How to deploy
-Terraform CLI
+### How to deploy on Terraform CLI (Cloud Provider Agnostic: AWS, GoogleCloud, Azure etc)
     terraform init
     terraform plan
-    terrform apply
+    terraform apply
 
 #### Diagram Flowchart
 ```mermaid
