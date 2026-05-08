@@ -14,9 +14,9 @@ Enterprise-grade multi-account strategy built with Terraform, aligned with NIST 
 - NIST 800-53 aligned
 
 ### How to deploy
-terrafom init
-terrafom plan
-terrform apply
+    terrafom init
+    terrafom plan
+    terrform apply
 
 #### Diagram Flowchart
 ```mermaid
