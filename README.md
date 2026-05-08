@@ -5,10 +5,12 @@
 This project creates a production-grade multi-account AWS Landing Zone using Terraform.
 
 ## Features
-- 6 AWS accounts (Security, Logging, Prod, Non-Prod, Shared Services, Audit)
-- Service Control Policies (SCPs)
-- GuardDuty + Security Hub enabled
-- Centralized logging
+- 6 seperate AWS accounts (Security, Logging, Prod, Non-Prod, Shared Services, Audit)
+- AWS Control Tower or manual Landing Zone
+- Service Control Policies (SCPs) for least privilege
+- Centralized logging + Security Hub aggregation
+- GuardDuty + Inspector enabled across all accounts
+- AWS Config rules with automated remediation
 - NIST 800-53 aligned
 
 ## How to Deploy
