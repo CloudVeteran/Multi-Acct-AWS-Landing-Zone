@@ -11,12 +11,6 @@ This project creates a production-grade multi-account AWS Landing Zone using Ter
 - Centralized logging
 - NIST 800-53 aligned
 
-## How to Deploy
-```bash
-terraform init
-terraform plan
-terraform apply
-
                     ┌──────────────────────────────┐
                     │     AWS Organization         │
                     │   (Root + SCPs attached)     │
@@ -39,3 +33,9 @@ terraform apply
    │  Production  │        │ Non-Production│        │    Audit     │
    │   Account    │        │   Account    │        │   Account    │
    └──────────────┘        └──────────────┘        └──────────────┘
+
+## How to Deploy
+```bash
+terraform init
+terraform plan
+terraform apply
