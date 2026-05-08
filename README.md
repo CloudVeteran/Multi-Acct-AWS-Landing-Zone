@@ -14,6 +14,8 @@ This project creates a production-grade multi-account AWS Landing Zone using Ter
 - NIST 800-53 aligned
 
 ### Diagram Flowchart
+```mermaid
+flowchart TD
     subgraph AWS_Organization["AWS Organization"]
         direction TB
         Root["Root + Service Control Policies<br/>(Deny Root + Deny Public S3)"]
@@ -51,7 +53,7 @@ This project creates a production-grade multi-account AWS Landing Zone using Ter
     style Workload_Accounts fill:#1B660F,stroke:#fff,color:#fff
     style GuardDuty fill:#FF9900,stroke:#232F3E
     style SecurityHub fill:#FF9900,stroke:#232F3E
-    
+
 #### How to Deploy
 ```bash
 terraform init
