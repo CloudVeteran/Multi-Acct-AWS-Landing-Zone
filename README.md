@@ -13,8 +13,7 @@ This project creates a production-grade multi-account AWS Landing Zone using Ter
 - AWS Config rules with automated remediation
 - NIST 800-53 aligned
 
-### Diagram
-flowchart TD
+### Diagram Flowchart
     subgraph AWS_Organization["AWS Organization"]
         direction TB
         Root["Root + Service Control Policies<br/>(Deny Root + Deny Public S3)"]
