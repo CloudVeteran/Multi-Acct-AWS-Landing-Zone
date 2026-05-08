@@ -1,8 +1,8 @@
-# Multi-Account AWS Landing Zone
+# Multi-Account AWS Landing Zone w/ Enterprise Guardrails
 
 **Terraform • AWS Organizations • NIST 800-53 • FedRAMP Ready**
 
-This project creates a production-grade multi-account AWS Landing Zone using Terraform.
+Enterprise-grade multi-account strategy built with Terraform, aligned with NIST 800-53 and FedRAMP requirements.
 
 ## Features
 - 6 seperate AWS accounts (Security, Logging, Prod, Non-Prod, Shared Services, Audit)
@@ -13,7 +13,12 @@ This project creates a production-grade multi-account AWS Landing Zone using Ter
 - AWS Config rules with automated remediation
 - NIST 800-53 aligned
 
-### Diagram Flowchart
+### How to deploy
+terrafom init
+terrafom plan
+terrform apply
+
+#### Diagram Flowchart
 ```mermaid
 flowchart TD
     subgraph AWS_Organization["AWS Organization"]
