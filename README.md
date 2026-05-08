@@ -13,12 +13,7 @@ This project creates a production-grade multi-account AWS Landing Zone using Ter
 - AWS Config rules with automated remediation
 - NIST 800-53 aligned
 
-## How to Deploy
-```bash
-terraform init
-terraform plan
-terraform apply
-
+### Diagram
 flowchart TD
     subgraph AWS_Organization["AWS Organization"]
         direction TB
@@ -58,3 +53,8 @@ flowchart TD
     style GuardDuty fill:#FF9900,stroke:#232F3E
     style SecurityHub fill:#FF9900,stroke:#232F3E
     
+#### How to Deploy
+```bash
+terraform init
+terraform plan
+terraform apply
