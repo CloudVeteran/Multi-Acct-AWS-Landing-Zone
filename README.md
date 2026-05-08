@@ -57,3 +57,4 @@ flowchart TD
     style Workload_Accounts fill:#1B660F,stroke:#fff,color:#fff
     style GuardDuty fill:#FF9900,stroke:#232F3E
     style SecurityHub fill:#FF9900,stroke:#232F3E
+    
