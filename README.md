@@ -52,9 +52,9 @@ flowchart TD
 
     Logging_Account -.->|Centralized Logs| Security_Account
 
-    style Root fill:#FF9900,stroke:#232F3E,color:#fff
+    style Root fill:#FFFFFF,stroke:#232F3E,color:#000000
     style Security_Account fill:#232F3E,stroke:#FF9900,color:#fff
     style Logging_Account fill:#232F3E,stroke:#FF9900,color:#fff
     style Workload_Accounts fill:#1B660F,stroke:#fff,color:#fff
-    style GuardDuty fill:#FF9900,stroke:#232F3E
-    style SecurityHub fill:#FF9900,stroke:#232F3E
+    style GuardDuty fill:#FFFFFF,stroke:#232F3E,color:#000000
+    style SecurityHub fill:#FFFFFF,stroke:#232F3E,color:#000000
